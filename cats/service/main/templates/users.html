@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table>
+{% for user in users %}
+    <tr>
+    <td>
+        <a href="/user/{{ user.username }}">{{ user.username }}</a>
+    </td>
+    </tr>
+{% endfor %}
+</table>
+
+{% endblock %}

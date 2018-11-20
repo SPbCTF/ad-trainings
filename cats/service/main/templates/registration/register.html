@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="post" action="{% url 'registration' %}">
+<table>
+<tr>
+    <td>LOGIN: </td>
+    <td> <input type="text" name="login"> </td>
+</tr>
+<tr>
+    <td>PASSWORD:</td>
+    <td> <input type="password" name="password"> </td>
+</tr>
+</table>
+
+<input type="submit" value="^-^ MEOW ^-^" />
+</form>
+
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a href="/user/{{ user.username }}">Мои картинки ({{ user.username }})</a>
+||
+<a class="TOKEN">Токен для друзей: {{ friend_token }}</a>
+||
+<a href="/">На главную</a>
+||
+<a href="/users/">Список пользователей</a>
+||
+<a href="/accounts/logout/?next=/">Выход</a>
+
+
+{% if form %}
+<table>
+<tr>
+
+<td>
+<h2> Add MORE Cats</h2>
+<form action="/" method="post" enctype="multipart/form-data">
+    {% for field in form %}
+        <div>
+            {{ field.label_tag }}{{ field }}
+        </div>
+    {% endfor %}
+    <p><input type="submit" value="Add new cat" /></p>
+</form>
+</td>
+
+<td>
+<h2>Search for CATS</h2>
+<form action="search/" method="post">
+    <input type="text" name="title">
+    <input type="hidden" name="is_private" value="0">
+    <input type="submit" value="Search" />
+</form>
+</td>
+
+</tr>
+</table>
+{% endif %}
+
+<table>
+{% for left, right in images %}
+    <tr>
+        <td>
+            <img src="{{ left.image.url }}" height="420">
+            <div>{{ left.title }}</div>
+        </td>
+        <td>
+            <img src="{{ right.image.url }}" height="420">
+            <div>{{ right.title }}</div>
+        </td>
+    </tr>
+{% endfor %}
+{% if last_image %}
+    <tr>
+        <td>
+            <img src="{{ last_image.image.url }}" height="420">
+            <div>{{ last_image.title }}</div>
+        </td>
+    </tr>
+{% endif %}
+</table>
+
+{% endblock %}
