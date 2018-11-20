@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Slim 3</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                margin: 50px 0 0 0;
+                padding: 0;
+                width: 100%;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-align: center;
+                color: #aaa;
+                font-size: 18px;
+            }
+
+            h1 {
+                color: #719e40;
+                letter-spacing: -3px;
+                font-family: 'Lato', sans-serif;
+                font-size: 100px;
+                font-weight: 200;
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cities</h1>
+        <div>a brand new Game</div>
+
+        <p>
+            Country not found. Try to create it first.
+            <form onsubmit="return false;">
+                Country name: <input id="country" type="text" name="country"><br />
+                Dataset description: <input id="description" type="text" name="description">
+            </form>
+        </p>
+    </body>
+    <script>
+        document.getElementById('country').addEventListener('keypress', function(event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                if (this.value) {
+                    window.location = '/create/' + this.value + '/' + document.getElementById('description').value;
+                }
+            }
+        });
+        document.getElementById('description').addEventListener('keypress', function(event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                if (this.value) {
+                    window.location = '/create/' + document.getElementById('country').value + '/' + this.value;
+                }
+            }
+        });
+    </script>
+</html>
