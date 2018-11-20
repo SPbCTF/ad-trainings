@@ -1,0 +1,12 @@
+version: '2'
+services:
+    php:
+        image: ${STACK_PHP_IMAGE}
+        links:
+          - mysql
+    mysql:
+        image: mysql:latest
+        ports:
+          - 3306:3306
+        environment:
+          MYSQL_ROOT_PASSWORD: root
