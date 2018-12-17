@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>
+    Crypto bulki
+  </title>
+</head>
+<body>
+  <H1>Cryptobulki service. Enсrypts you bulki since 1992</H1>
+  <div>
+    <span>Messages</span><span><a href="/add">ADD</a></span>
+  <table>
+    <thead>
+      <tr>
+        <td>username</td>
+        <td>message</td>
+        <td>date</td>
+      </tr>
+    </thead>
+    <tbody>
+    {% for m in messages: %}
+      <tr>
+        <td><a href="/read/{{ m['username'] }}" >{{ m['username'] }}</a></td>
+        <td>{{ m['message'] }}</td>
+        <td>{{ m['date'] }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <img id='cat'src="/img/cat1.gif" style="position:absolute; left:90%;"/>
+  <script>
+  var dd=70;
+  var b = -1;
+  function f(){
+      dd+=b;
+      document.getElementById('cat').style.top=dd+"%";
+      if (dd < 0){
+        b *=-1;
+      }
+      setTimeout("f()",1000);
+  }
+  f();
+  </script>
+  </div>
+</body>
+</html>

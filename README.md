@@ -6,6 +6,7 @@
  - [blogger](blogger/) — PHP, XSS, авторы Александр Менщиков и Павел Лалетин ([n0str](https://github.com/n0str), [statos](https://github.com/statos))
  - [cats](cats/) — Python, криптография, автор Александр Полев ([kenny](https://github.com/kenny1992))
  - [cities](cities/) — PHP, RCE, автор Александр Менщиков ([n0str](https://github.com/n0str))
+ - [cryptobulki](cryptobulki/) — Python, криптография автор Ханов Артур ([awengar](https://github.com/awengar))
  - [notescol](notescol/) — Perl, RCE, автор Kwisatz Haderach ([Haderach](https://github.com/Haderach))
  - [kruassan](kruassan/) — C,linux, автор Ханов Артур ([awengar](https://github.com/awengar))
 

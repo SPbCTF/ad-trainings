@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>
+    Crypto bulki
+  </title>
+</head>
+<body>
+  <H1>Cryptobulki service. Enсrypts you bulki since 1992</H1>
+  <div>
+    <a href="/">BACK</a>
+    <span>New Message</span>
+    <form method="POST">
+      <p><b>Your name</b><Br>
+      <input type='text' name="username"></input>
+      <p><b>Your bulk</b><Br>
+      <textarea name="message" cols="40" rows="3"></textarea>
+      <input type="submit" value="Send">
+    </form>
+    {% if message %}
+      <div>{{message}}</div>
+      <div>Encrypted bulka: {{ dmes }}</div>
+    {% endif %}
+  </div>
+</body>
+</html>
