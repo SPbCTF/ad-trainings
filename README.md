@@ -7,6 +7,7 @@
  - [cats](cats/) — Python, криптография, автор Александр Полев ([kenny](https://github.com/kenny1992))
  - [cities](cities/) — PHP, RCE, автор Александр Менщиков ([n0str](https://github.com/n0str))
  - [notescol](notescol/) — Perl, RCE, автор Kwisatz Haderach ([Haderach](https://github.com/Haderach))
+ - [kruassan](kruassan/) — C,linux, автор Ханов Артур ([awengar](https://github.com/awengar))
 
 ## Лицензия
 «Разрешено всем, кроме Арсиба» — [LICENSE.ABAGPL.txt](LICENSE.ABAGPL.txt)
