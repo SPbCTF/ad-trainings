@@ -1,5 +1,5 @@
 # Тренировки сезона Attack-Defence SPbCTF
-Здесь материалы со всех тренировок сезона атак-дефенс SPbCTF в 2018 году.
+Здесь материалы со всех тренировок сезона атак-дефенс SPbCTF в 2018-2019 году.
 
 ## Сервисы
  - [bank](bank/) — PHP, Race Condition, авторы — Александр Менщиков и Павел Лалетин ([n0str](https://github.com/n0str), [statos](https://github.com/statos))
@@ -9,6 +9,7 @@
  - [cryptobulki](cryptobulki/) — Python, криптография автор Ханов Артур ([awengar](https://github.com/awengar))
  - [notescol](notescol/) — Perl, RCE, автор Kwisatz Haderach ([Haderach](https://github.com/Haderach))
  - [kruassan](kruassan/) — C,linux, автор Ханов Артур ([awengar](https://github.com/awengar))
+ - [flagification](flagification/) — Python, автор Александр Менщиков ([n0str](https://github.com/n0str))
 
 ## Лицензия
 «Разрешено всем, кроме Арсиба» — [LICENSE.ABAGPL.txt](LICENSE.ABAGPL.txt)

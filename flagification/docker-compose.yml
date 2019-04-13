@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  flagification:
+    build: .
+    volumes:
+      - ./app:/home/flagification
+    restart: always
+    ports:
+      - 2800:2800

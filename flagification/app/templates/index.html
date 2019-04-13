@@ -1,0 +1,140 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+
+	{% include 'header.html' %}
+
+		<body>	
+
+			{% include 'menu.html' %}
+
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-6 col-md-6">
+							<h1>
+								Apply ML on<br>
+								Production level <br>
+								with Flags
+							</h1>
+							<p class="text-white text-uppercase">
+								Everyone wants the innovation through flags
+							</p>
+							<a href="#" class="primary-btn header-btn text-uppercase">More flags</a>
+						</div>
+						<div class="banner-img col-lg-6 col-md-6">
+							<img class="img-fluid" src="img/banner-img.png" alt="">
+						</div>												
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+			<!-- Start products Area -->
+			<section id="services" class="products-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-12 pb-40 header-text text-center">
+							<h1 class="pb-10">Featured Products to Show</h1>
+							<p>
+								Who are in extremely love with flags and ML.
+							</p>
+						</div>
+					</div>							
+					<div class="row">
+						<div class="offset-lg-3 offset-md-3 col-lg-3 col-md-6">
+							<div class="single-product">
+								<div class="thumb">
+									<img src="img/p2.png" alt="">
+								</div>
+								<div class="details">
+									<h4>Clustering project</h4>
+									<p>
+										Cloud based clustering.
+									</p>
+									<a href="/clustering" class="primary-btn text-uppercase">View Details</a>
+								</div>
+							</div>
+						</div>	
+						<div class="col-lg-3 col-md-6">
+							<div class="single-product">
+								<div class="thumb">
+									<img src="img/p3.png" alt="">
+								</div>
+								<div class="details">
+									<h4>Classification project</h4>
+									<p>
+										Flag or not flag.
+									</p>
+									<a href="#" class="primary-btn text-uppercase">View Details</a>
+								</div>
+							</div>
+						</div>	
+
+					</div>
+				</div>	
+			</section>
+			<!-- End products Area -->
+
+			<!-- Start feature Area -->
+			<section class="feature-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-12 pb-40 header-text text-center">
+							<h1 class="pb-10 text-white">Experiments that our users Made</h1>
+							<p class="text-white">
+								Who are in extremely love with our friendly ML system.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						{% for figure in figures %}
+							<div class="col-lg-4 col-md-6">
+								<div class="single-feature">
+									<a href="#" class="title d-flex flex-row">
+										<span class="lnr {{ ['lnr-diamond', 'lnr-rocket', 'lnr-phone', 'lnr-license', 'lnr-user'] | random }} lnr-bubble"></span>
+										<h4>Experiment</h4>
+									</a>
+									<p>
+										<img src="/img/{{ figure}}" width="150" height="150">
+									</p>
+								</div>
+							</div>
+						{% endfor %}
+
+					</div>
+				</div>	
+			</section>
+			<!-- End feature Area -->
+			
+
+			<!-- Start brand Area -->
+			<section class="brand-area pt-120">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l1.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l2.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l3.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l4.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l5.png" alt="">
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End brand Area -->
+
+			<section class="pt-120">
+			</section>
+
+			{% include 'footer.html' %}
+		</body>
+	</html>

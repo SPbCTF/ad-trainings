@@ -1,0 +1,21 @@
+<header id="header" id="home">
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+          <div id="logo">
+          </div>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="/">Home</a></li>
+                {% if auth is defined and auth %}
+                    <li><a href="/clustering">Clustering</a></li>
+                    <li><a href="#">Classification</a></li>
+                {% else %}
+                    <li><a href="/registration">Register</a></li>
+                    <li><a href="/login">Auth</a></li>
+                {% endif %}
+              <li><a href="/#services">Services</a></li>
+            </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->

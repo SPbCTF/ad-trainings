@@ -1,0 +1,87 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+
+        {% include 'header.html' %}
+
+		<body>
+
+            {% include 'menu.html' %}
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Users
+							</h1>	
+							<p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/clustering"> Users</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start about-video Area -->
+			<section class="about-video-area section-gap">
+				<div class="container">
+					<div class="row align-items-center">
+						{% if error is defined %}
+							<div class="alert alert-danger" role="alert">
+							  {{ error }}
+							</div>
+						{% else %}
+							<p class="h1">Users</p>
+							<hr>
+							<table class="table">
+							  <thead>
+								<tr>
+								  <th scope="col">User</th>
+								</tr>
+							  </thead>
+							  <tbody>
+							   {% for user in users %}
+							  	<tr>
+								  <td>{{ user }}</td>
+								</tr>
+							   {% endfor %}
+							  </tbody>
+							</table>
+						{% endif %}
+					</div>
+				</div>	
+			</section>
+			<!-- End about-video Area -->			
+
+
+			<!-- Start brand Area -->
+			<section class="brand-area section-gap">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l1.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l2.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l3.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l4.png" alt="">
+						</div>
+						<div class="col single-brand">
+							<img class="img-fluid" src="img/l5.png" alt="">
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End brand Area -->			
+
+            {% include 'footer.html' %}
+
+		</body>
+	</html>
+
+
